@@ -11,11 +11,13 @@ header {
     background-color: #31473A;
     color: #e8e8e8;
     padding: 1rem 0;
-    position: relative;
 }
 
 .header-content {
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px; /* Adjust the width as needed */
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -23,9 +25,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 2rem;
-    text-align: center;
 }
-
 
 header nav {
     margin-top: 0.5rem;
@@ -43,6 +43,66 @@ header nav a:active,
 header nav a:visited {
     text-decoration: none;
     color: #fff;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+main h1 {
+    font-size: 2.4rem;
+}
+
+.content-history {
+    /* background-color: #fff; */
+    padding: 1rem;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.year-section {
+    margin-bottom: 2rem;
+}
+
+.year-section h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.0rem;
+    color: #333;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-list li {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.article-list li:last-child {
+    border-bottom: none;
+}
+
+.article-list .date {
+    margin-right: 1.5rem;
+    color: #666;
+    font-size: 1.0rem;
+}
+
+.article-list .article-title {
+    color: #0044cc;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.article-list .article-title:hover {
+    text-decoration: underline;
 }
 
 footer {
